@@ -1,8 +1,8 @@
-package com.waylau.mybatisflex.mybatisflexh2;
+package com.waylau.mybatisflex.mybatisflederby;
 
 import com.mybatisflex.core.query.QueryWrapper;
-import com.waylau.mybatisflex.mybatisflexh2.mapper.RoleMapper;
-import com.waylau.mybatisflex.mybatisflexh2.model.Role;
+import com.waylau.mybatisflex.mybatisflederby.mapper.RoleMapper;
+import com.waylau.mybatisflex.mybatisflederby.model.Role;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,12 +11,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static com.waylau.mybatisflex.mybatisflexh2.model.table.RoleTableDef.ROLE;
+import static com.waylau.mybatisflex.mybatisflederby.model.table.RoleTableDef.ROLE;
 
 @SpringBootTest
-class MybatisFlexH2ApplicationTests {
+class MybatisFlexDerbyApplicationTests {
 
-    private static Logger log = LoggerFactory.getLogger(MybatisFlexH2ApplicationTests.class);
+    private static Logger log = LoggerFactory.getLogger(MybatisFlexDerbyApplicationTests.class);
 
     @Autowired
     private RoleMapper roleMapper;

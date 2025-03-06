@@ -1,0 +1,16 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:myDb
+    username: sa
+    password: sa
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    initialization-mode: always
+  sql:
+    init:
+      mode: always
+logging:
+  level:
+   root: debug

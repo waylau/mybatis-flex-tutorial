@@ -1,0 +1,17 @@
+# 多数据源配置
+mybatis-flex:
+  datasource:
+    h2-datasource:
+      driver-class-name: org.h2.Driver
+      url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1
+      username: sa
+      password:
+      schema: classpath:h2-schema.sql
+      data: classpath:h2-data.sql
+    hsqldb-datasource:
+      driver-class-name: org.hsqldb.Driver
+      url: jdbc:hsqldb:mem://localhost/testdb;shutdown=true
+      username: sa
+      password:
+      schema: classpath:hsqldb-schema.sql
+      data: classpath:hsqldb-data.sql

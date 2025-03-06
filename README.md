@@ -20,14 +20,17 @@
 ## Samples 示例
 
 * [使用Spring Boot及H2](samples/mybatis-flex-h2)
+* [使用Spring Boot及HSQLDB](samples/mybatis-flex-hsqldb)（test）
+* [使用Spring Boot及Derby](samples/mybatis-flex-derby)（test）
+* [使用Spring Boot及多数据源](samples/mybatis-flex-multi-datasource)（dev）
 
 
 ## Get start 如何开始阅读
 
 选择下面入口之一：
 
-* <https://github.com/waylau/harmonyos-tutorial> 的 [README.md](https://github.com/waylau/harmonyos-tutorial/blob/master/README.md)
-* <https://gitee.com/waylau/harmonyos-tutorial> 的 [README.md](https://gitee.com/waylau/harmonyos-tutorial/blob/master/README.md)
+* <https://github.com/waylau/mybatis-flex-tutorial> 的 [README.md](https://github.com/waylau/mybatis-flex-tutorial/blob/master/README.md)
+
 
 
 ## Code 源码
