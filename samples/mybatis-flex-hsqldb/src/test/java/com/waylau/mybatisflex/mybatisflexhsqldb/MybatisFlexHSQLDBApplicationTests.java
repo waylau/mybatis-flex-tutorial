@@ -4,6 +4,7 @@ import com.mybatisflex.core.query.QueryWrapper;
 import com.waylau.mybatisflex.mybatisflexhsqldb.mapper.CountryMapper;
 import com.waylau.mybatisflex.mybatisflexhsqldb.mapper.UserMapper;
 import com.waylau.mybatisflex.mybatisflexhsqldb.model.User;
+import com.waylau.mybatisflex.mybatisflexhsqldb.model.Country; // 新增导入
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,8 +48,13 @@ class MybatisFlexHSQLDBApplicationTests {
                 .from(COUNTRY)
                 .where(COUNTRY.NAME.like("卫"));
 
-        List<User> userList = userMapper.selectListByQuery(queryWrapper);
-
-        userList.forEach(user -> log.info("user id {}, {}", user.getId(), user.getUserName()));
+        List<Country> countryList = countryMapper.selectListByQuery(queryWrapper); // 修改变量类型
+        if (countryList == null || countryList.isEmpty()) {
+            log.info("No countries found.");
+        } else {
+            // 遍历国家列表，对每个国家执行日志输出操作
+            countryList.forEach(country -> log.info("country id {}, {}", country.getId(), country.getName())); // 修改日志输出
+        }
     }
 }
+

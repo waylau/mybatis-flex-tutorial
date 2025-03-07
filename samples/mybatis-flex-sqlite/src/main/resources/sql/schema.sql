@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS t_role (id INTEGER, role_name TEXT);

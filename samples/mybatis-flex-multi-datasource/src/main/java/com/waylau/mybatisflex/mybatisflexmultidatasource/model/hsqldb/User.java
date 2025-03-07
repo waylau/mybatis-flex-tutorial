@@ -4,7 +4,7 @@ import com.mybatisflex.annotation.Id;
 import com.mybatisflex.annotation.KeyType;
 import com.mybatisflex.annotation.Table;
 
-@Table(value = "t_user", dataSource = "hsqldb-datasource")
+@Table(value = "t_user", dataSource = "ds2-datasource")
 public class User {
 
     @Id(keyType = KeyType.Auto)

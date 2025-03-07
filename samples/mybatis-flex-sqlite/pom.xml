@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.waylau.mybatisflex</groupId>
-	<artifactId>mybatis-flex-multi-datasource</artifactId>
+	<artifactId>mybatis-flex-sqlite</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mybatis-flex-multi-datasource</name>
-	<description>Demo project for Spring Boot with MyBatis-Flex and PostgreSQL</description>
+	<name>mybatis-flex-sqlite</name>
+	<description>Demo project for Spring Boot with MyBatis-Flex and SQLite</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -31,9 +31,8 @@
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 		<mybatis-flex.version>1.10.8</mybatis-flex.version>
-		<postgresql.version>42.7.5</postgresql.version>
-		<lombok.version>1.18.36</lombok.version>
 		<sqlite-jdbc.version>3.49.1.0</sqlite-jdbc.version>
+		
 	</properties>
 	<dependencies>
 		<dependency>
@@ -58,21 +57,33 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>${sqlite-jdbc.version}</version>
 			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.xerial</groupId>
-			<artifactId>sqlite-jdbc</artifactId>
-			<version>${sqlite-jdbc.version}</version>
-			<scope>runtime</scope>
-		</dependency>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- pom.xml关键配置
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+		</dependency>-->
 	</dependencies>
 
 	<build>

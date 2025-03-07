@@ -16,6 +16,7 @@
 ## Summary 目录
 
 * [MyBatis-Flex快速入门使用Spring Boot及H2](https://waylau.com/getting-started-with-mybatis-flex/)
+* [使用Spring Boot及SQLite](samples/mybatis-flex-sqlite)
 
 ## Samples 示例
 
@@ -23,6 +24,7 @@
 * [使用Spring Boot及HSQLDB](samples/mybatis-flex-hsqldb)（test）
 * [使用Spring Boot及Derby](samples/mybatis-flex-derby)（test）
 * [使用Spring Boot及多数据源](samples/mybatis-flex-multi-datasource)（dev）
+* [使用Spring Boot及SQLite](samples/mybatis-flex-sqlite)
 
 
 ## Get start 如何开始阅读

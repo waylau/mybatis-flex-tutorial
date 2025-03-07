@@ -1,12 +1,15 @@
 # DataSource Config
 spring:
   datasource:
-    #driver-class-name: org.apache.derby.jdbc.EmbeddedDriver
+    driver-class-name: org.apache.derby.jdbc.EmbeddedDriver
     url: jdbc:derby:memory:myDb;create=true
     username: sa
     password:
-    schema: classpath:schema.sql
-    data: classpath:data.sql
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
 logging:
   level:
    root: debug

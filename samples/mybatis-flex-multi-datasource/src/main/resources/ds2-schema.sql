@@ -1,0 +1,1 @@
+create table t_user (id int, user_name varchar);

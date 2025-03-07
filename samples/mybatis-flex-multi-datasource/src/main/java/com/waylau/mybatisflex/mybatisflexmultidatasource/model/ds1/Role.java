@@ -1,10 +1,10 @@
-package com.waylau.mybatisflex.mybatisflexmultidatasource.model.h2;
+package com.waylau.mybatisflex.mybatisflexmultidatasource.model.ds1;
 
 import com.mybatisflex.annotation.Id;
 import com.mybatisflex.annotation.KeyType;
 import com.mybatisflex.annotation.Table;
 
-@Table(value = "t_role", dataSource = "h2-datasource")
+@Table(value = "t_role", dataSource = "ds1-datasource")
 public class Role {
 
     @Id(keyType = KeyType.Auto)

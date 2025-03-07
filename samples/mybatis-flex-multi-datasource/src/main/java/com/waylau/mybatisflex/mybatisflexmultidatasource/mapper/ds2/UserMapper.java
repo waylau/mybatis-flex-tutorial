@@ -1,4 +1,4 @@
-package com.waylau.mybatisflex.mybatisflexmultidatasource.mapper.hsqldb;
+package com.waylau.mybatisflex.mybatisflexmultidatasource.mapper.ds2;
 
 
 import com.mybatisflex.core.BaseMapper;

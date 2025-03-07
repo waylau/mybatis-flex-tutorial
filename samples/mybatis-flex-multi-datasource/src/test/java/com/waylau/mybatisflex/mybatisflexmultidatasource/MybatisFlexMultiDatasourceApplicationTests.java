@@ -2,9 +2,9 @@ package com.waylau.mybatisflex.mybatisflexmultidatasource;
 
 
 import com.mybatisflex.core.query.QueryWrapper;
-import com.waylau.mybatisflex.mybatisflexmultidatasource.mapper.h2.RoleMapper;
-import com.waylau.mybatisflex.mybatisflexmultidatasource.mapper.hsqldb.UserMapper;
-import com.waylau.mybatisflex.mybatisflexmultidatasource.model.h2.Role;
+import com.waylau.mybatisflex.mybatisflexmultidatasource.mapper.ds1.RoleMapper;
+import com.waylau.mybatisflex.mybatisflexmultidatasource.mapper.ds2.UserMapper;
+import com.waylau.mybatisflex.mybatisflexmultidatasource.model.ds1.Role;
 import com.waylau.mybatisflex.mybatisflexmultidatasource.model.hsqldb.User;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
-import static com.waylau.mybatisflex.mybatisflexmultidatasource.model.h2.table.RoleTableDef.ROLE;
+import static com.waylau.mybatisflex.mybatisflexmultidatasource.model.ds1.table.RoleTableDef.ROLE;
 import static com.waylau.mybatisflex.mybatisflexmultidatasource.model.hsqldb.table.UserTableDef.USER;
 
 @SpringBootTest
